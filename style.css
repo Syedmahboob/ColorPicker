@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Squada+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* flex to body as we have single div */
+
+body {
+  display: flex;
+  height: 100vh;
+  /* place-items: center; */
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+}
+
+.main {
+  height: 340px;
+  width: 270px;
+  background-color: #363547;
+  /* box-shadow: 10px 10px 5px 0px rgba(201, 194, 194, 0.75); */
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  color: rgb(243, 236, 225);
+  padding-bottom: 25px;
+  padding-top: 5px;
+}
+
+#box {
+  width: 80%;
+  height: 35px;
+  text-align: center;
+  border: none;
+  border-radius: 0.625rem;
+  letter-spacing: 0.125rem;
+}
+
+p {
+  letter-spacing: 0.3125rem;
+}
+
+/* input slider */
+
+input[type="range"] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 80%; /* Specific width is required for Firefox. */
+  background: white; /* Otherwise white in Chrome */
+  height: 8px;
+  border-radius: 3px;
+}
+
+/* Special styling for WebKit/Blink */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #ecdbdb;
+  height: 19px;
+  width: 15px;
+  border-radius: 5px;
+  background: #ffffff;
+  cursor: pointer;
+  /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+}
+
+/* range */
+.main #Red {
+  background-color: #d90429;
+}
+
+.main #Blue {
+  background-color: #00509d;
+}
+
+.main #Green {
+  background-color: #386641;
+}
